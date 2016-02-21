@@ -11,7 +11,7 @@ library(gganimate)
 library(RColorBrewer)
 
 # setwd
-setwd('/epest/R')
+setwd('~/Desktop/data-projects/epest/R')
 
 # read usa counties shapefile
 counties <- readOGR('../shp/gz_2010_us_050_00_500k', 'gz_2010_us_050_00_500k')
@@ -101,7 +101,7 @@ p1 <- ggplot(neonicYear, aes(x = YEAR, y = tot_kg, col = COMPOUND)) +
         legend.background = element_rect(fill = "grey85"))
 
 #quartz(height = 5, width = 7); print(p1)
-ggsave('../img/neonic-yr.tiff', p1, height = 5, width = 7, units = 'in')
+ggsave('../img/neonic-yr.png', p1, height = 5, width = 7, units = 'in')
 
 # plot scaled neonic usage by year and county
 labels <- c('0.00001', '0.001', '0.1', '10')
@@ -119,7 +119,7 @@ p2 <- ggplot(epestMergeNeonic, aes(x = YEAR, y = kg_scaled, group = fips)) +
         axis.title.y = element_text(margin = margin(0, .5, 0, 0, unit = 'cm')))
 
 #quartz(height = 5, width = 7); print(p2)
-ggsave('../img/neonic-yr-county.tiff', p2, height = 5, width = 7, units = 'in')
+ggsave('../img/neonic-yr-county.png', p2, height = 5, width = 7, units = 'in')
 
 
 

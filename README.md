@@ -15,11 +15,11 @@ Visualize usage of neonicotinoid pesticides across the counterminous USA from 19
 
 Total neonicotinoid usage by year:
 
-![](/img/neonic-yr.tiff)
+![](/img/neonic-yr.png)
 
 Neonicotinoid usage by county and year:
 
-![](/img/neonic-yr-county.tiff)
+![](/img/neonic-yr-county.png)
 
 Animation of neonicotinoid usage by county over time, created using the [gganimate package](https://github.com/dgrtwo/gganimate):
 
