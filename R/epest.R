@@ -174,4 +174,6 @@ p3 <- ggplot(countiesTidyEpest,
         axis.ticks = element_blank(),
         axis.text = element_blank())
 
-gg_animate(p3, '../img/neonic-ani.gif', ani.width = 1100, ani.height = 800)
+gg_animate(p3, '../img/neonic-ani.gif', ani.width = 800, ani.height = 650,
+           loop = T)
+
